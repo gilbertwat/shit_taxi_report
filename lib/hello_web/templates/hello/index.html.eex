@@ -1,1 +1,21 @@
-Hello World!
+<%= form_for @changeset, hello_path(@conn, :index), fn f ->%>
+  <label>
+    License Plate: <%= text_input f, :license_plate %>
+  </label>
+
+  <fieldset>
+    Rejected: <%= radio_button f, :type, "rejected"%>
+  </fieldset>
+  <fieldset>
+    Too much fare: <%= radio_button f, :type, "too_much_fare"%>
+  </fieldset>
+  <fieldset>
+    lat: <%= number_input f, :lat %>
+  </fieldset>
+  <fieldset>
+    lon: <%= number_input f, :lon %>
+  </fieldset>
+  <%= submit "屌你老母" %>
+<% end %>
+    
+    

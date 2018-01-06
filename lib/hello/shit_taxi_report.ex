@@ -16,7 +16,7 @@ defmodule Hello.ShitTaxiReport do
   @doc false
   def changeset(%ShitTaxiReport{} = shit_taxi_report, attrs) do
     shit_taxi_report
-    |> cast(attrs, [:license_plate, :type, :created_at, :lat, :lon])
-    |> validate_required([:license_plate, :type, :created_at, :lat, :lon])
+    |> cast(attrs, [:license_plate, :type, :lat, :lon])
+    |> validate_required([:license_plate, :type, :lat, :lon])
   end
 end
