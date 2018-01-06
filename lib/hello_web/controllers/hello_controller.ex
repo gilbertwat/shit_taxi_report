@@ -9,23 +9,25 @@ defmodule HelloWeb.HelloController do
     render conn, "index.html", changeset: changeset
   end
 
-  def show(conn, %{"messenger" => messenger}) do
-    render conn, "show.html", messenger: messenger
+  def show(conn, _params) do
+    render conn, "show.html"
   end
 
   def create(conn, %{"shit_taxi_report" => shit_taxi_report }) do
-    changeset = ShitTaxiReport.changeset(%ShitTaxiReport{}, shit_taxi_report)
-    if changeset.valid? do
-      result = Repo.insert(changeset.data)
-    else
-      render conn, "show.html", messenger: inspect(changeset.data)
-    end
-      case result do
-        {:ok, x} ->
-          render conn, "show.html", messenger: "success"
-        _ ->
-          render conn, "show.html", messenger: "error"
-      end
+    ShitTaxiReport.changeset(%ShitTaxiReport{}, shit_taxi_report) 
+      |> 
+        fn (cs) ->
+          if cs.valid? do
+            case Repo.insert(cs.data) do
+              {:ok, x} ->
+                render conn, "show.html", messenger: "success"
+              _ ->
+                render conn, "show.html", messenger: "error"
+            end
+          else
+            render conn, "show.html", messenger: inspect(cs.data)
+          end
+        end.()
   end
 
 end
