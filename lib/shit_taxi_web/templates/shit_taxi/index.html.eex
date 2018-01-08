@@ -1,13 +1,14 @@
-<%= form_for @changeset, shit_taxi_path(@conn, :index), fn f ->%>
+<%= inspect(@changeset) %>
+<%= form_for @changeset, shit_taxi_path(@conn, :create), fn f ->%>
   <label>
-    License Plate: <%= text_input f, :license_plate %>
+    條粉腸個車牌: <%= text_input f, :license_plate %>
   </label>
 
   <fieldset>
-    Rejected: <%= radio_button f, :type, "rejected"%>
+    又拒載我dllm: <%= radio_button f, :type, "rejected"%>
   </fieldset>
   <fieldset>
-    Too much fare: <%= radio_button f, :type, "too_much_fare"%>
+    又借啲E收多: <%= radio_button f, :type, "too_much_fare"%>
   </fieldset>
   <fieldset>
     lat: <%= number_input f, :lat %>

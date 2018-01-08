@@ -10,7 +10,6 @@ defmodule ShitTaxiWeb.ShitTaxiView do
   end
 
   def render("one.json", %{shit_taxi: shit_taxi_report}) do
-    IO.inspect(shit_taxi_report)
     %{ id: shit_taxi_report.id }
   end
 end
