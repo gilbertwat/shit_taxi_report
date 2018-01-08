@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766e72fe-d34c-4ddd-bd16-f6991617a202" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/_build/dev/lib/hello/ebin/" />
-    <ignored path="$PROJECT_DIR$/_build/test/lib/hello/ebin/" />
+    <ignored path="$PROJECT_DIR$/_build/dev/lib/ShitTaxi/ebin/" />
+    <ignored path="$PROJECT_DIR$/_build/test/lib/ShitTaxi/ebin/" />
     <ignored path="$PROJECT_DIR$/assets/_build/dev/lib/phoenix/ebin/" />
     <ignored path="$PROJECT_DIR$/assets/_build/test/lib/phoenix/ebin/" />
     <ignored path="$PROJECT_DIR$/assets/_build/dev/lib/phoenix_html/ebin/" />
@@ -30,8 +30,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.ex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/hello.ex">
+      <file leaf-file-name="ShitTaxi.ex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/ShitTaxi.ex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -40,8 +40,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello_web.ex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/hello_web.ex">
+      <file leaf-file-name="ShitTaxi_web.ex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/ShitTaxi_web.ex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-527">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -113,27 +113,27 @@
         <subPane>
           <expand>
             <path>
-              <item name="hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
+              <item name="ShitTaxi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShitTaxi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
+              <item name="ShitTaxi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShitTaxi" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
+              <item name="ShitTaxi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShitTaxi" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
+              <item name="ShitTaxi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShitTaxi" type="462c0819:PsiDirectoryNode" />
               <item name="priv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
+              <item name="ShitTaxi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShitTaxi" type="462c0819:PsiDirectoryNode" />
               <item name="priv" type="462c0819:PsiDirectoryNode" />
               <item name="repo" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -283,7 +283,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/hello.ex">
+    <entry file="file://$PROJECT_DIR$/lib/ShitTaxi.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -291,7 +291,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/hello_web.ex">
+    <entry file="file://$PROJECT_DIR$/lib/ShitTaxi_web.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-527">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

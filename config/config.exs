@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :hello,
-  ecto_repos: [Hello.Repo]
+config :ShitTaxi,
+  ecto_repos: [ShitTaxi.Repo]
 
 # Configures the endpoint
-config :hello, HelloWeb.Endpoint,
+config :ShitTaxi, ShitTaxiWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "/VlpypZrSr6sYkDxyIUw7uC0W6NDMRFnR2n2GvB3NW2uy8sxUAI/qHEFx9ZKnJAN",
-  render_errors: [view: HelloWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Hello.PubSub,
+  render_errors: [view: ShitTaxiWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: ShitTaxi.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

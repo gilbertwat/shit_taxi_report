@@ -1,4 +1,4 @@
-defmodule Hello.Repo.Migrations.CreateShitTaxiReport do
+defmodule ShitTaxi.Repo.Migrations.CreateShitTaxiReport do
   use Ecto.Migration
 
   def up do

@@ -1,4 +1,4 @@
-# Hello
+# ShitTaxi
 
 To start your Phoenix server:
 

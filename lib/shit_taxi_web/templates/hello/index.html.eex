@@ -1,4 +1,7 @@
-<%= form_for @changeset, hello_path(@conn, :index), fn f ->%>
+<%= if true do %>
+  <div>ERROR</div>
+<% end %>
+<%= form_for @changeset, shit_taxi_path(@conn, :index), fn f ->%>
   <label>
     License Plate: <%= text_input f, :license_plate %>
   </label>

@@ -1,7 +1,7 @@
-defmodule Hello.ShitTaxiReport do
+defmodule ShitTaxi.ShitTaxiReport do
   use Ecto.Schema
   import Ecto.Changeset
-  alias Hello.ShitTaxiReport
+  alias ShitTaxi.ShitTaxiReport
 
 
   schema "shit_taxi_report" do

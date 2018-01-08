@@ -1,12 +1,12 @@
-defmodule HelloWeb do
+defmodule ShitTaxiWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use HelloWeb, :controller
-      use HelloWeb, :view
+      use ShitTaxiWeb, :controller
+      use ShitTaxiWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,17 +19,17 @@ defmodule HelloWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: HelloWeb
+      use Phoenix.Controller, namespace: ShitTaxiWeb
       import Plug.Conn
-      import HelloWeb.Router.Helpers
-      import HelloWeb.Gettext
+      import ShitTaxiWeb.Router.Helpers
+      import ShitTaxiWeb.Gettext
     end
   end
 
   def view do
     quote do
-      use Phoenix.View, root: "lib/hello_web/templates",
-                        namespace: HelloWeb
+      use Phoenix.View, root: "lib/shit_taxi_web/templates",
+                        namespace: ShitTaxiWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
@@ -37,9 +37,9 @@ defmodule HelloWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import HelloWeb.Router.Helpers
-      import HelloWeb.ErrorHelpers
-      import HelloWeb.Gettext
+      import ShitTaxiWeb.Router.Helpers
+      import ShitTaxiWeb.ErrorHelpers
+      import ShitTaxiWeb.Gettext
     end
   end
 
@@ -54,7 +54,7 @@ defmodule HelloWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import HelloWeb.Gettext
+      import ShitTaxiWeb.Gettext
     end
   end
 

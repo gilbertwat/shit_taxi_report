@@ -1,14 +1,14 @@
-defmodule HelloWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :hello
+defmodule ShitTaxiWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :ShitTaxi
 
-  socket "/socket", HelloWeb.UserSocket
+  socket "/socket", ShitTaxiWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :hello, gzip: false,
+    at: "/", from: :ShitTaxi, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -35,10 +35,10 @@ defmodule HelloWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_hello_key",
+    key: "_ShitTaxi_key",
     signing_salt: "PwIHsKP3"
 
-  plug HelloWeb.Router
+  plug ShitTaxiWeb.Router
 
   @doc """
   Callback invoked for dynamically configuring the endpoint.

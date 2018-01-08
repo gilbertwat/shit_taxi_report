@@ -1,5 +1,5 @@
-defmodule HelloWeb.ErrorView do
-  use HelloWeb, :view
+defmodule ShitTaxiWeb.ErrorView do
+  use ShitTaxiWeb, :view
 
   def render("404.html", _assigns) do
     "Page not found"

@@ -1,4 +1,4 @@
-defmodule HelloWeb.ChannelCase do
+defmodule ShitTaxiWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,15 +21,15 @@ defmodule HelloWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint HelloWeb.Endpoint
+      @endpoint ShitTaxiWeb.Endpoint
     end
   end
 
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Hello.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(ShitTaxi.Repo)
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Hello.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(ShitTaxi.Repo, {:shared, self()})
     end
     :ok
   end

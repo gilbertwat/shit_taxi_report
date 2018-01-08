@@ -1,5 +1,5 @@
-defmodule Hello.Repo do
-  use Ecto.Repo, otp_app: :hello
+defmodule ShitTaxi.Repo do
+  use Ecto.Repo, otp_app: :ShitTaxi
 
   @doc """
   Dynamically loads the repository url from the

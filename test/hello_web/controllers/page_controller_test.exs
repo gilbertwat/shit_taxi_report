@@ -1,5 +1,5 @@
-defmodule HelloWeb.PageControllerTest do
-  use HelloWeb.ConnCase
+defmodule ShitTaxiWeb.PageControllerTest do
+  use ShitTaxiWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"
