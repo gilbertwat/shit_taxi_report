@@ -16,7 +16,6 @@ defmodule ShitTaxiWeb.Router do
   scope "/", ShitTaxiWeb do
     pipe_through :browser # Use the default browser stack
     get "/", ShitTaxiController, :index
-    post "/", ShitTaxiController, :create
   end
 
   # Other scopes may use custom stacks.
@@ -24,5 +23,6 @@ defmodule ShitTaxiWeb.Router do
     pipe_through :api
     get "/all", ShitTaxiController, :show
     get "/one", ShitTaxiController, :one
+    post "/", ShitTaxiController, :create
   end
 end

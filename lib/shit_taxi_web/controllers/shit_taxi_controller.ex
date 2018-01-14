@@ -3,6 +3,7 @@ defmodule ShitTaxiWeb.ShitTaxiController do
 
   alias ShitTaxi.ShitTaxiReport
   alias ShitTaxi.Repo
+  alias ShitTaxi.ErrorView
 
   def index(conn, _params) do
     changeset = ShitTaxiReport.changeset(%ShitTaxiReport{}, %{})
@@ -14,11 +15,14 @@ defmodule ShitTaxiWeb.ShitTaxiController do
     case Repo.insert(cs) do
       {:ok, report} ->
         conn
-        |> put_flash(:info, "\##{report.id} created")
-        |> redirect(to: shit_taxi_path(conn, :index))
+          |> put_status(:no_content)
+          |> send_resp
       {:error, error}->
-        IO.inspect error
-        render conn, "index.html", changeset: error
+        IO.inspect error.errors
+        # put_status(conn, :unprocessable_entity)
+        conn
+          |> put_view(ShitTaxiWeb.ErrorView)
+          |> render "422.json", error: error.errors
     end
   end
 
@@ -27,6 +31,7 @@ defmodule ShitTaxiWeb.ShitTaxiController do
     # shit_taxi_reports = [%{id: "foo"}, %{id: "bar"}]
     render conn, "all.json", shit_taxi_reports: Repo.all(ShitTaxiReport)
   end
+
   def one(conn, _params) do
     # Repo.all(ShitTaxiReport)
     shit_taxi_report = %{id: "foo"}
