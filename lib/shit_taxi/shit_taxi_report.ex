@@ -5,9 +5,9 @@ defmodule ShitTaxi.ShitTaxiReport do
 
 
   schema "shit_taxi_report" do
-    field :lat, :integer
+    field :lat, :float
     field :license_plate, :string
-    field :lon, :integer
+    field :lon, :float
     field :type, OffendTypes
 
     timestamps()

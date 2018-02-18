@@ -7,8 +7,8 @@ defmodule ShitTaxi.Repo.Migrations.CreateShitTaxiReport do
     create table(:shit_taxi_report) do
       add :license_plate, :string
       add :type, :type
-      add :lat, :integer
-      add :lon, :integer
+      add :lat, :float
+      add :lon, :float
 
       timestamps()
     end
