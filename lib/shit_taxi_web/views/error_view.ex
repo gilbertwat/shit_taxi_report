@@ -1,8 +1,8 @@
+
 defmodule ShitTaxiWeb.ErrorView do
   use ShitTaxiWeb, :view
 
   def render("404.html", _assigns) do
-    IO.inspect(_assigns)
     "Page not found"
   end
 
@@ -11,8 +11,13 @@ defmodule ShitTaxiWeb.ErrorView do
   end
 
   def render("422.json", %{error: error}) do
-    IO.inspect(error)
-    "ERROR"
+    result_key = Map.keys(Enum.into(error.errors, %{}))
+    result = Enum.reduce(result_key, %{}, fn(key, result) ->
+      Map.put(result,key, %{
+          message: elem(error.errors[key], 0),
+          extras: Enum.into(elem(error.errors[key], 1), %{})})
+    end)
+    result
   end
 
   # In case no render clause matches or no

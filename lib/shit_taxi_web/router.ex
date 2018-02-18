@@ -19,10 +19,10 @@ defmodule ShitTaxiWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  scope "/api", ShitTaxiWeb do
+  scope "/api/reports/", ShitTaxiWeb do
     pipe_through :api
-    get "/all", ShitTaxiController, :show
-    get "/one", ShitTaxiController, :one
-    post "/", ShitTaxiController, :create
+    get "all", ReportController, :show
+    get "one", ReportController, :one
+    post "/", ReportController, :create
   end
 end
